@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+a {
+    color: #ff4c4c;
+    text-decoration: none;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(34, 34, 34, 0.8)), url('championship-ready.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff7373;
+    transform: scale(1.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 40px 0;
+    color: #ff4c4c;
+}
+
+.team-section, .news-section, .achievements-section, .contact-section {
+    padding: 40px 20px;
+}
+
+.team-container, .news-container, .achievements-container, .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    color: #bbb;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px #ff4c4c;
+}
+
+.achievement-item {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-item h3 {
+    margin-top: 0;
+    color: #ff4c4c;
+}
+
+.achievement-item p {
+    color: #bbb;
+}
+
+.achievement-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px #ff4c4c;
+}
+
+.news-item {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item h3 {
+    margin-top: 0;
+    color: #ff4c4c;
+}
+
+.news-item p {
+    color: #bbb;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px #ff4c4c;
+}
+
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff4c4c;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
